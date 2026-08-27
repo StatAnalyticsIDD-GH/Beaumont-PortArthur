@@ -218,8 +218,8 @@ grid-auto-rows: minmax(0, 1fr);">
 EDF Global Clean Air Air Tracker — Beaumont / Port Arthur
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
-<p>This tab embeds the <strong>EDF Global Clean Air Air Tracker</strong>, centered on the Beaumont / Port Arthur area and showing <strong>PM₂.₅</strong> against the <strong>EPA</strong> air quality standard. The map below is loaded live from EDF each time this page is opened, so it always reflects EDF’s current data — it is not a snapshot taken when this dashboard was last rendered.</p>
-<p><strong>This map is not the same data as the other tabs.</strong> The CHATTER heatmaps on this site are built from TCEQ monitor exports that CHATTER processes itself, with its own design-value and hazard-index calculations and its own data cutoff. The Air Tracker is EDF’s own product, with its own data sources, methodology, and update schedule. The two can legitimately disagree, and neither is “wrong” — they answer slightly different questions. Use the Air Tracker for a live regional picture, and the CHATTER tabs for the screening-level comparisons over time.</p>
+<p>This tab embeds the <strong>EDF Global Clean Air Air Tracker</strong>, centered on the Beaumont / Port Arthur area and showing <strong>PM2.5</strong> against the <strong>EPA</strong> air quality standard. EDF’s Air Tracker is a real-time mapping tool that helps people learn about the air quality in their neighborhoods. Air Tracker combines air pollution data and weather forecasting to reveal what pollutants are in the air and where they may be coming from. Whereas CHATTER focuses on providing information about health risks associated with pollution levels measured at local monitors, Air Tracker can be a helpful tool for identifying potential sources of local air pollution. The map below is loaded live from EDF each time this page is opened, so it always reflects EDF’s current data — it is not a snapshot taken when this dashboard was last rendered.</p>
+<p><strong>This map is not the same data as the other tabs.</strong> The CHATTER heatmaps on this site are built from TCEQ monitor data and CHATTER automatically processes, using EPA design-values and screening levels in calculations. The Air Tracker is an EDF tool, with its own data sources, methodology, and update schedule. The two can interpret the data in different ways, and neither is “wrong” — they answer slightly different questions. Use the Air Tracker for a live regional picture pollutants levels and use weather related data to determine where it came from, and the CHATTER tabs to look at time related trends in air pollutant levels and whether there are health concerns to follow more closely based on comparison to health based screening levels.</p>
 <p>If the map does not appear below, EDF’s site is declining to be embedded in another page. Use the button to open it directly.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -328,7 +328,7 @@ Air Tracker (live)
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/Beaumont-PortArthur\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

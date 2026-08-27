@@ -191,17 +191,18 @@ grid-auto-rows: minmax(0, 1fr);">
 Other Health Risks — Total by Location
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
-<p>This view reorganizes the other health risk pollutants around <strong>location</strong> rather than health effect. Each location card shows one row per <strong>health effect</strong>, and each cell is the <strong>total</strong> for that effect — the sum of the hazard quotients (UCLM₉₅ ÷ EPA limit) of every chemical that contributes to it. This is the same “Total” reported for each health effect on the main dashboard, so the two pages agree.</p>
-<p>A value below <strong>1.00x</strong> means the combined exposure sits below the EPA hazard limit for that body system; <strong>1.00x</strong> is the limit itself. The <code>n =</code> in each row label is the number of chemicals summed into that total — Nervous effects combine 8 chemicals, while Immune and Reproductive rest on a single chemical each, so totals are not equally well supported.</p>
-<p>Other health risk pollutants are measured by the <strong>AutoGC monitors</strong>, which exist at only two sites — Beaumont-Downtown and Nederland 17th Street. The eight EPA AQS criteria sites shown in the EPA Criteria Pollutants tab do not report these chemicals.</p>
+<p>This view reorganizes the other health risk pollutants around <strong>geographic</strong> <strong>location</strong> rather than health system effected. Each location card shows one row per <strong>health system</strong>, and each cell is the combined <strong>total</strong> — the sum of the hazard quotients (Average ÷ EPA limit) of every chemical that contributes to it. This is the same “Total” reported for each health effect on the main dashboard, so the two pages agree.</p>
+<p>A value below <strong>1.00x</strong> means the combined exposure sits below the EPA hazard limit for that body system; <strong>1.00x</strong> is the limit itself. The ``<code>n =''</code> in each row label is the number of chemicals contributing to that total — Brain and Nervous system effects combine 8 chemicals, while Immune system and Reproductive system (or ability to have children) rest on a single chemical each, so totals are not equally well supported.</p>
+<p>CHATTER analyzes air pollutants measured with automatic gas chromatograph (AutoGC) equipment. In Beaumont-Port-Arthur, there are only two AutoGC monitor sites that measure cancer risk pollutants analyzed by CHATTER: Beaumont-Downtown and Nederland 17th Street.</p>
 <details>
 <summary>
 <strong>How to read this plot</strong> (click to expand)
 </summary>
 <p>Each <strong>row</strong> is a <strong>health effect</strong> — a body system that can be harmed, such as the nervous system or the immune system. Each <strong>column</strong> is a period of time. The number in each square is the <strong>total</strong> for that health effect: the levels of every pollutant affecting that body system, added together and divided by the EPA hazard limit, written as a multiple with an “x.”</p>
-<p>The <code>(n=…)</code> beside each health effect is how many pollutants were added together to make that total. Nervous effects combine 8 pollutants, while Immune and Reproductive each rest on a single one, so the totals are not equally well supported by the data.</p>
-<p><strong>A worked example.</strong> On the Nederland 17th Street card, find the row for <strong>Immune</strong> and the column for <strong>2024</strong>. The square reads <strong>0.055x</strong>. That number means the combined level of the pollutants affecting the immune system was about 5% of the EPA hazard limit — in other words, <strong>well below</strong> the limit.</p>
-<p><strong>Everything on this tab is currently below the limit.</strong> The highest total anywhere is about 0.09x, and the color scale does not begin to darken until <strong>1.0x</strong>, where a level would reach the limit. So the whole grid appears in the palest shade. That is the finding, not a rendering problem: for these health effects, measured levels at both monitors are far under the EPA limit. Read the numbers to compare pollutants and years; the color is telling you they are all in the same safe band.</p>
+<p>The <code>``n=''</code> beside each health effect is how many pollutants were added together to make that total. Brain and Nervous system effects combine 8 pollutants, while Immune and Reproductive system (or the ability to have children) each rest on a single one, so the totals are not equally well supported by the data.</p>
+<strong>A worked example.</strong>
+<p>On the Nederland 17th Street card, find the row for <strong>Immune</strong> and the column for <strong>2024</strong>. The square reads <strong>0.06x</strong>. That number means the combined level of the pollutants affecting the immune system was about 5% of the EPA hazard limit — in other words, <strong>well below</strong> the limit.</p>
+<p><strong>Everything on this tab is currently below the limit.</strong> The highest total anywhere is about 0.09x, and the color scale does not begin to darken until <strong>1.00x</strong>, where a level would reach the limit. So the whole grid appears in the palest shade. That is the finding, not a rendering problem: for these health effects, measured levels at both monitors are far under the EPA limit. Read the numbers to compare pollutants and years to see changes over time; the color is telling you they are all in the same safe band.</p>
 <p>For the general explanation of heat maps, see the <a href="./index_faq.html">Frequently Asked Questions</a>.</p>
 </details>
 </div>
@@ -327,7 +328,7 @@ Nederland 17th Street
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/Beaumont-PortArthur\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

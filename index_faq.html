@@ -209,7 +209,7 @@ Frequently Asked Questions
 <div class="card-body html-fill-item html-fill-container">
 <p>Most of the plots in CHATTER are <strong>heat maps</strong>. A heat map is a grid of squares where the number in each square is the measurement, and the color of the square tells you at a glance how that number compares to a health-based limit.</p>
 <p><strong>Each row is an air pollutant</strong> (or, on some tabs, a health effect or a total). <strong>Each column is a period of time</strong> — a calendar year, the most recent 365 days, or the most recent month.</p>
-<p><strong>The number in each square is a multiple, written with an “x.”</strong> It is the measured level divided by the limit. So <strong>1.0x</strong> means the level is exactly at the limit. A number <strong>below 1.0x</strong> means the level is below the limit — for example, <strong>0.5x</strong> is half the limit. A number <strong>above 1.0x</strong> means the level is above the limit — for example, <strong>3.0x</strong> means the level is three times the limit, and <strong>6.5x</strong> means six and a half times the limit.</p>
+<p><strong>The number in each square is a multiple, written with an “x.”</strong> It is the measured level divided by the limit. So <strong>1.00x</strong> means the level is exactly at the limit. A number <strong>below 1.00x</strong> means the level is below the limit — for example, <strong>0.5x</strong> is half the limit. A number <strong>above 1.00x</strong> means the level is above the limit — for example, <strong>3.00</strong> means the level is three times the limit, and <strong>6.50x</strong> means six and a half times the limit.</p>
 <p><strong>The color legend beside each plot shows what those multiples mean.</strong> The palest color means the level is below the limit. The darker the color, the further above the limit the level is. The label on the legend sits at the line where each band begins, so a square colored in the band starting at “5x” is somewhere between five and ten times the limit.</p>
 <p><strong>Squares shaded gray with diagonal hatching mean there is no measurement</strong> for that pollutant in that period — usually because the monitor does not measure it. A gap in the data is not the same as a low reading, so CHATTER marks it differently rather than leaving it blank.</p>
 <p><strong>The bottom row of some plots is a Total.</strong> It adds up the individual pollutants above it, to show the combined burden for that time period.</p>
@@ -225,7 +225,7 @@ Frequently Asked Questions
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>An air pollution monitor is an instrument that measures the pollutants in the air to understand outdoor air quality conditions. See EPA’s overview of <a href="https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring">ambient air monitoring</a>.</p>
+<p>An air pollution monitor is an instrument that measures the pollutants in the outdoor air to understand air quality conditions. See EPA’s overview of <a href="https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring">ambient air monitoring</a>.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -237,9 +237,9 @@ Frequently Asked Questions
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>An EPA screening level is a reference point, based on scientific studies, that helps identify when air pollution may be high enough to raise health concerns. CHATTER compares measured air pollution levels to these screening levels and shows when pollution levels exceed them.</p>
-<p>Depending on the amount by which a pollutant exceeds the screening level, further action may be warranted. For measurements falling below the level, no further action may be warranted. Exceeding a screening level does not mean that health effects will occur. Instead, it indicates that the pollution level may require closer evaluation and, in some cases, actions to reduce exposure.</p>
-<p>EPA provides screening levels for both cancer risk and other health effects, such as asthma, breathing problems, heart disease, and other chronic health conditions. CHATTER compares yearly air pollution levels with the EPA screening level.</p>
+<p>An EPA screening level is a reference point, based on scientific studies, that helps identify when air pollution may be high enough to raise health concerns and warrants added action or investigation. CHATTER compares measured air pollution levels to these screening levels and shows when pollution levels exceed them.</p>
+<p>Depending on the amount by which a pollutant exceeds the screening level, further action may be warranted to reduce people’s exposure to unhealthy levels of outdoor air pollution. For measurements falling below the level, no further action may be warranted. Exceeding a screening level does not mean that health effects will occur. Instead, it indicates that the pollution level may require closer evaluation and, in some cases, actions to reduce exposure.</p>
+<p>EPA provides screening levels for both cancer risk and other health effects, such as breathing problems, heart disease, and other chronic health conditions. CHATTER compares yearly air pollution levels with the EPA screening level.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -253,7 +253,7 @@ Frequently Asked Questions
 <div class="card-body html-fill-item html-fill-container">
 <p>EPA uses past scientific studies to understand cancer risks related to air pollution levels over a person’s lifetime. EPA generally considers a lifetime cancer risk of one additional cancer case per one million people exposed over 70 years to be a low level of concern. Risks above this level suggest closer evaluations are needed, while risks approaching 100 additional cancer cases per one million people exposed over 70 years are generally considered a greater concern and may require actions to reduce exposure.</p>
 <p>A lifetime cancer risk of one in a million means that if one million people were exposed to the same level of a pollutant continuously for 70 years, one additional person may develop cancer because of that exposure.</p>
-<p>CHATTER uses EPA’s one-in-a-million increased cancer case air pollution screening levels for residents. In the heat map key, the white color means the air pollution level is equal to the one-added-cancer-case-per-million-people screening level. The darker the color, the higher the screening level threshold. Air pollution levels 100x the screening level are shown in the darkest orange. The 100x screening level means 100 cancer cases in a million people if they were exposed over a 70-year lifespan.</p>
+<p>CHATTER uses EPA’s one-in-a-million increased cancer case air pollution screening levels for residents. In the heat map key, the white color means the air pollution level is equal to the one-added-cancer-case-per-million-people screening level. The darker the color, the higher the value compared to the screening level threshold. Air pollution levels 100x the screening level are shown in the darkest orange. The 100x screening level means increased risk of 100 cancer cases in one million people if they were exposed over a 70-year lifespan.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -265,7 +265,7 @@ Frequently Asked Questions
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>The EPA also sets screening levels for long-term health outcomes that are not cancer. EPA uses scientific studies to set screening levels for air pollution levels that may pose a risk of long-term health problems other than cancer, such as asthma, breathing problems, heart disease, and other chronic health conditions. Air pollution levels are acceptable when they are equal to or below the screening level, and suggest further action when they are ten times greater than the screening level.</p>
+<p>The EPA also sets screening levels for long-term health outcomes that are not cancer. EPA uses scientific studies to set screening levels for air pollution levels that may pose a risk of long-term health problems other than cancer, such as breathing problems, heart disease, and other chronic health conditions. Air pollution levels are acceptable when they are equal to or below the screening level, and suggest further action when they are ten times greater than the screening level.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -277,7 +277,7 @@ Frequently Asked Questions
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>National Ambient Air Quality Standards (NAAQS) are air quality standards set by EPA under the Clean Air Act for common pollutants: ozone, fine particles, carbon monoxide, sulfur dioxide, nitrogen dioxide, and lead. These standards are designed to help protect public health, including sensitive groups such as children, older adults, and people with heart or lung disease. Air pollution measurements from monitoring stations are compared to these standards to determine whether an area’s air quality meets federal health-based requirements.</p>
+<p>National Ambient Air Quality Standards (NAAQS) are air quality standards set by EPA under the Clean Air Act for common pollutants: ozone, fine particles, carbon monoxide, sulfur dioxide, nitrogen dioxide, and lead. These standards are designed to help protect public health, including for ensitive groups such as children, older adults, and people with heart or lung disease. Air pollution measurements from monitoring stations are compared to these standards to determine whether an area’s air quality meets federal health-based requirements.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -289,7 +289,7 @@ Frequently Asked Questions
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>No.&nbsp;Some air monitors measure only a few air pollutants compared to others. The state and EPA decide which instruments are placed where and which pollutants they will measure. You can find a detailed list of all the air monitoring sites and what they measure on the <a href="https://www17.tceq.texas.gov/tamis/index.cfm?fuseaction=report.site_list">TCEQ website</a>.</p>
+<p>No.&nbsp;Some air monitors measure only a few air pollutants compared to others. The state and EPA decide which instruments are placed where and which pollutants they will measure. You can find a detailed list of all the air monitoring sites in Texas and what they measure on the <a href="https://www17.tceq.texas.gov/tamis/index.cfm?fuseaction=report.site_list">TCEQ website</a>. You can also find ones that are operated in collaboration with the federal government on the EPA <a href="https://www.airnow.gov/?city=Beaumont&amp;state=TX&amp;country=USA">AirNow website</a>.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -328,8 +328,8 @@ Frequently Asked Questions
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
 <p>It depends on the group of pollutants, because EPA compares each group to its standard in a different way.</p>
-<p>For the <strong>cancer risk pollutants</strong> and the <strong>other health risk pollutants</strong>, CHATTER uses the yearly average concentration to approximate the level of pollution people are exposed to over a longer period. Because an average calculated from a limited number of measurements is uncertain, CHATTER uses the 95% upper confidence limit on that average — a value chosen so that the true long-term average is unlikely to be higher. This is a health-protective way to summarize a year of monitoring, and it is consistent with EPA methods for long-term exposure.</p>
-<p>For the <strong>EPA criteria pollutants</strong>, an annual average is <em>not</em> the right comparison. Each National Ambient Air Quality Standard (NAAQS) is written for a specific averaging time and a specific statistical form, so CHATTER uses the same form EPA uses for each pollutant. See the next question.</p>
+<p>For the <strong>cancer risk pollutants</strong> and the <strong>other health risk pollutants</strong>, CHATTER uses the yearly average concentration to approximate the level of pollution people are exposed to over a longer period. This is a health-protective way to summarize a year of monitoring, and it is consistent with EPA methods for long-term exposure.</p>
+<p>For the <strong>EPA criteria pollutants</strong>, an annual average is <em>not</em> the right comparison. Each National Ambient Air Quality Standard (NAAQS) is written for a specific averaging time and a specific statistic. CHATTER uses the same form EPA uses for each pollutant. This is a statistic called the EPA <strong>Design value</strong> which is defined below.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -341,12 +341,12 @@ Frequently Asked Questions
 <div class="bslib-grid html-fill-item html-fill-container" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>A <strong>design value</strong> is the specific statistic EPA uses to compare a monitor’s measurements against a National Ambient Air Quality Standard. Each criteria pollutant has its own averaging time and its own statistical form, so a simple yearly average would not be comparable to the standard. CHATTER calculates each pollutant using the form EPA specifies:</p>
+<p>A <strong>design value</strong> is the specific statistic EPA uses to compare a monitor’s measurements against a National Ambient Air Quality Standard. The Clean Air Act specifies acceptable levels of pollution defined by concentration or amount of pollutant measured over a specific length of time. They might use the third highest daily average value over a 3 year period by location for fine particulate matter (PM2.5). Whereas, ozone thresholds may be based on highest average levels measured over an 8 hour period in the last year. Each criteria pollutant has its own averaging time and appropriate statistic, so a simple yearly average would not be comparable to the standard. CHATTER calculates each pollutant using the form EPA specifies:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
-<col style="width: 12%">
-<col style="width: 67%">
+<col style="width: 20%">
+<col style="width: 58%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -372,15 +372,15 @@ Frequently Asked Questions
 <td>4th-highest daily maximum 8-hour average</td>
 </tr>
 <tr class="even">
-<td>Fine particles (PM₂.₅)</td>
+<td>Fine particles (PM2.5)</td>
 <td>35 µg/m³ (24-hour)</td>
 <td>98th percentile of the daily values</td>
 </tr>
 </tbody>
 </table>
-<p>Each cell in the criteria pollutant heat maps shows the design value divided by the standard. A value below <strong>1.0x</strong> means the pollutant is within the standard; a value above <strong>1.0x</strong> means it is above the standard.</p>
+<p>Each cell in the criteria pollutant heat maps shows the design value divided by the standard. A value below <strong>1.00x</strong> means the pollutant is within the standard; a value above <strong>1.00x</strong> means it is above the standard.</p>
 <p>Notice that these forms are deliberately <em>not</em> averages. They are built from the high end of the year’s measurements, because the health concern for these pollutants comes from short-term peaks as well as long-term exposure.</p>
-<p><strong>One important limitation.</strong> EPA’s official design values, the ones used to formally determine whether an area meets a standard, are averaged over <strong>three consecutive years</strong> of monitoring. CHATTER calculates each year separately, so the yearly columns show a <em>single-year</em> design value. This makes year-to-year changes visible, which is the point of the tracker, but it means a CHATTER value above 1.0x is <strong>not</strong> the same as an official EPA finding that an area has violated the standard. Treat it as a signal worth a closer look, not as a regulatory determination.</p>
+<p><strong>One important limitation.</strong> EPA’s official design values, the ones used to formally determine whether an area meets a standard, are averaged over <strong>three consecutive years</strong> of monitoring. CHATTER calculates each year separately, so the yearly columns show a <em>single-year</em> design value. This makes year-to-year changes visible, which is the point of the tracker, but it means a CHATTER value above 1.00x is <strong>not</strong> the same as an official EPA finding that an area has violated the standard. Treat it as a signal worth a closer look, not as a regulatory determination.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -476,7 +476,7 @@ Frequently Asked Questions
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/Beaumont-PortArthur\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

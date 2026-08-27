@@ -191,18 +191,19 @@ grid-auto-rows: minmax(0, 1fr);">
 Cancer Risk Pollutants by Location
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
-<p>Cancer risk pollutants are air pollutants that <strong>increase the risk of developing cancer</strong>. Each location lists every cancer risk pollutant measured at that site and its concentration (UCLM₉₅) as a multiple of the <strong>Screening Level</strong>. The bottom <strong>Total (Combined)</strong> row sums the pollutants, matching the combined cancer total reported on the main dashboard.</p>
-<p>A value below <strong>1.00x</strong> is below the screening level. The <strong>cancer risk pollutant values exceed the limit</strong> at both monitors; read the color scale carefully.</p>
-<p>Cancer risk pollutants are measured by the <strong>AutoGC monitors</strong>, so only two sites report these pollutants: Beaumont-Downtown and Nederland 17th Street.</p>
+<p>Cancer risk pollutants are air pollutants that <strong>increase the lifetime risk of developing cancer</strong>. Each location lists every cancer risk pollutant measured at that site and its average concentration as a multiple of the <strong>Screening Level</strong>. The bottom <strong>Total (Combined)</strong> row sums the pollutant risks, matching the combined cancer total reported on the main dashboard.</p>
+<p>A value below <strong>1.00x</strong> is below the screening level.</p>
+<p>CHATTER analyzes air pollutants measured with automatic gas chromatograph (AutoGC) equipment. In Beaumont-Port-Arthur, there are only two AutoGC monitor sites that measure cancer risk pollutants analyzed by CHATTER: Beaumont-Downtown and Nederland 17th Street.</p>
 <details>
 <summary>
 <strong>How to read this plot</strong> (click to expand)
 </summary>
 <p>Each <strong>row</strong> is a cancer risk pollutant, with its health effect listed beside it. Each <strong>column</strong> is a period of time — the calendar years, the year so far (2026 YTD), the most recent 365 days, and the most recent month. The bottom row, <strong>Total (Combined)</strong>, adds the pollutants together for that period.</p>
 <p>The number in each square is the measured level divided by the Screening Level, written as a multiple with an “x.”</p>
-<p><strong>A worked example.</strong> On the Beaumont-Downtown card, find the row for <strong>1,3-Butadiene</strong> and the column for <strong>2024</strong>. The square reads <strong>1.82x</strong>. Breathing 1,3-butadiene increases the risk of cancer. That number means the level of 1,3-butadiene in 2024 was a little less than twice the screening level. Looking at the color scale on the right, the square falls in the band that begins at the <strong>Screening Level</strong> — the range from one to five times the screening level.</p>
+<strong>A clarifying example.</strong>
+<p>On the Beaumont-Downtown card, find the row for <strong>1,3-Butadiene</strong> and the column for <strong>2024</strong>. The square reads <strong>1.82x</strong>. Breathing 1,3-butadiene increases the risk of cancer. That number means the level of 1,3-butadiene in 2024 was a little less than twice the screening level. Looking at the color scale on the right, the square falls in the band that begins at the <strong>Screening Level</strong> — the range from one to five times the screening level, values in this range are considered acceptable risk levels for human health.</p>
 <p>Squares paler than that band are <strong>below</strong> the screening level. In the same column, Beaumont’s <strong>Total (Combined)</strong> for 2024 is <strong>3.03x</strong>: adding both cancer pollutants together, the combined level was about three times the screening level.</p>
-<p>For the general explanation of heat maps, see the <a href="./index_faq.html">Frequently Asked Questions</a>.</p>
+<p>For a general explanation of heat maps, see the <a href="./index_faq.html">Frequently Asked Questions</a>.</p>
 </details>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -326,7 +327,7 @@ Nederland 17th Street
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/statanalyticsidd-gh\.github\.io\/Beaumont-PortArthur\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
