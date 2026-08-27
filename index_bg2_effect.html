@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
-          <div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="undefined"></a></div></div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
@@ -192,17 +192,18 @@ Other Health Risks by Health Indicator
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <p>This view organizes the other health risk pollutants by <strong>health indicator</strong> — the body system that a pollutant can harm. Each plot below covers one indicator and shows every pollutant that contributes to it, with the two AutoGC monitors side by side and a <strong>Total</strong> row combining them.</p>
-<p>Each cell is the average level divided by the <strong>EPA hazard limit</strong> for that pollutant. A value below <strong>1.00x</strong> is below the limit. A pollutant appears under every indicator it affects, so the same chemical can show up in more than one plot.</p>
+<p>Each cell is the average level divided by the <strong>screening level</strong> for that pollutant. A value below <strong>1.00x</strong> is below the screening level. A pollutant appears under every indicator it affects, so the same chemical can show up in more than one plot.</p>
 <p>CHATTER analyzes air pollutants measured with automatic gas chromatograph (AutoGC) equipment. In Beaumont-Port-Arthur, there are only two AutoGC monitor sites that measure cancer risk pollutants analyzed by CHATTER: Beaumont-Downtown and Nederland 17th Street.</p>
 <details>
 <summary>
 <strong>How to read this plot</strong> (click to expand)
 </summary>
 <p>Each plot is one <strong>health indicator</strong> — a body system such as the brain and nervous system or immune system. Within a plot, each <strong>row</strong> is a pollutant that can affect that body system, each <strong>column</strong> is a period of time, and the two blocks side by side are the two monitors. The bottom <strong>Total</strong> row adds the pollutants together.</p>
-<p>The number in each square is the pollutant level divided by the EPA hazard limit, written as a multiple with an “x.”</p>
-<strong>A worked example.</strong>
-<p>In the <em>Immune system</em> plot, find <strong>Benzene</strong> at Nederland 17th Street in <strong>2024</strong>. The square reads <strong>0.06x</strong> — the benzene level was about 5% of the EPA hazard limit, well below it. Because benzene is the only pollutant listed under Immune system, the Total row reads the same.</p>
-<p><strong>Everything on this tab is currently below the limit.</strong> The color scale does not begin to darken until <strong>1.0x0</strong>, and no value here comes close, so the grids appear in the palest shade.</p>
+<p>The number in each square is the pollutant level divided by the screening level, written as a multiple with an “x.”</p>
+<strong>A clarifying example.</strong>
+<p>In the <em>Immune system</em> plot, find <strong>Benzene</strong> at Nederland 17th Street in <strong>2024</strong>. The square reads <strong>0.022x</strong> — the average benzene level was about 2% of the screening level, well below it. Because benzene is the only pollutant listed under Immune system, the Total row reads the same.</p>
+<img src="figures/examples/bg2eff_example.png" class="img-fluid">
+<p><strong>Everything on this tab is currently below the screening level.</strong> The color scale does not begin to darken until <strong>1.00x</strong>, and no value here comes close, so the grids appear in the palest shade.</p>
 <p>For the general explanation of heat maps, see the <a href="./index_faq.html">Frequently Asked Questions</a>.</p>
 </details>
 </div>

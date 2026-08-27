@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
-          <div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="undefined"></a></div></div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
@@ -191,18 +191,19 @@ grid-auto-rows: minmax(0, 1fr);">
 Other Health Risks — Total by Location
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
-<p>This view reorganizes the other health risk pollutants around <strong>geographic</strong> <strong>location</strong> rather than health system effected. Each location card shows one row per <strong>health system</strong>, and each cell is the combined <strong>total</strong> — the sum of the hazard quotients (Average ÷ EPA limit) of every chemical that contributes to it. This is the same “Total” reported for each health effect on the main dashboard, so the two pages agree.</p>
-<p>A value below <strong>1.00x</strong> means the combined exposure sits below the EPA hazard limit for that body system; <strong>1.00x</strong> is the limit itself. The ``<code>n =''</code> in each row label is the number of chemicals contributing to that total — Brain and Nervous system effects combine 8 chemicals, while Immune system and Reproductive system (or ability to have children) rest on a single chemical each, so totals are not equally well supported.</p>
+<p>This view reorganizes the other health risk pollutants around <strong>geographic</strong> <strong>location</strong> rather than health system effected. Each location card shows one row per <strong>health system</strong>, and each cell is the combined <strong>total</strong> — the levels of every chemical that contributes to it, each divided by its screening level and then added together. This is the same “Total” reported for each health effect on the main dashboard, so the two pages agree.</p>
+<p>A value below <strong>1.00x</strong> means the combined exposure sits below the screening level for that body system; <strong>1.00x</strong> is the screening level itself. The <strong>(n=)</strong> in each row label is the number of chemicals contributing to that total — Brain and Nervous system effects combine 8 chemicals, while Immune system and Reproductive system (or ability to have children) rest on a single chemical each, so totals are not equally well supported.</p>
 <p>CHATTER analyzes air pollutants measured with automatic gas chromatograph (AutoGC) equipment. In Beaumont-Port-Arthur, there are only two AutoGC monitor sites that measure cancer risk pollutants analyzed by CHATTER: Beaumont-Downtown and Nederland 17th Street.</p>
 <details>
 <summary>
 <strong>How to read this plot</strong> (click to expand)
 </summary>
-<p>Each <strong>row</strong> is a <strong>health effect</strong> — a body system that can be harmed, such as the nervous system or the immune system. Each <strong>column</strong> is a period of time. The number in each square is the <strong>total</strong> for that health effect: the levels of every pollutant affecting that body system, added together and divided by the EPA hazard limit, written as a multiple with an “x.”</p>
-<p>The <code>``n=''</code> beside each health effect is how many pollutants were added together to make that total. Brain and Nervous system effects combine 8 pollutants, while Immune and Reproductive system (or the ability to have children) each rest on a single one, so the totals are not equally well supported by the data.</p>
-<strong>A worked example.</strong>
-<p>On the Nederland 17th Street card, find the row for <strong>Immune</strong> and the column for <strong>2024</strong>. The square reads <strong>0.06x</strong>. That number means the combined level of the pollutants affecting the immune system was about 5% of the EPA hazard limit — in other words, <strong>well below</strong> the limit.</p>
-<p><strong>Everything on this tab is currently below the limit.</strong> The highest total anywhere is about 0.09x, and the color scale does not begin to darken until <strong>1.00x</strong>, where a level would reach the limit. So the whole grid appears in the palest shade. That is the finding, not a rendering problem: for these health effects, measured levels at both monitors are far under the EPA limit. Read the numbers to compare pollutants and years to see changes over time; the color is telling you they are all in the same safe band.</p>
+<p>Each <strong>row</strong> is a <strong>health effect</strong> — a body system that can be harmed, such as the nervous system or the immune system. Each <strong>column</strong> is a period of time. The number in each square is the <strong>total</strong> for that health effect: the levels of every pollutant affecting that body system, added together and divided by the screening level, written as a multiple with an “x.”</p>
+<p>The <strong>(n=)</strong> beside each health effect is how many pollutants were added together to make that total. Brain and Nervous system effects combine 8 pollutants, while Immune and Reproductive system (or the ability to have children) each rest on a single one, so the totals are not equally well supported by the data.</p>
+<strong>A clarifying example.</strong>
+<p>On the Nederland 17th Street card, find the row for <strong>Immune</strong> and the column for <strong>2024</strong>. The square reads <strong>0.022x</strong>. That number means the combined level of the pollutants affecting the immune system was about 2% of the screening level — in other words, <strong>well below</strong> it.</p>
+<img src="figures/examples/bg2loc_example.png" class="img-fluid">
+<p><strong>Everything on this tab is currently below the screening level.</strong> The highest total anywhere is about <strong>0.080x</strong>, and the color scale does not begin to darken until <strong>1.00x</strong>, where a level would reach the screening level. So the whole grid appears in the palest shade. That is the finding, not a rendering problem: for these health effects, measured levels at both monitors are far under the screening level. Read the numbers to compare pollutants and years to see changes over time; the color is telling you they are all in the same safe band.</p>
 <p>For the general explanation of heat maps, see the <a href="./index_faq.html">Frequently Asked Questions</a>.</p>
 </details>
 </div>

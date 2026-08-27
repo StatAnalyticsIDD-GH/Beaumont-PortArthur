@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
-          <div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="undefined"></a></div></div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
@@ -191,16 +191,17 @@ grid-auto-rows: minmax(0, 1fr);">
 Other Health Risks — All Pollutants by Location
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
-<p>Each location card lists <strong>every other-health-risk pollutant</strong> measured at that site, the <strong>health effects</strong> each one is associated with, and its hazard index over time — the average concentration divided by the Screening Level. A value below <strong>1.00x</strong> is below the screening level; <strong>1.00x</strong> is the limit itself. The bottom <strong>Total</strong> row sums the hazard quotients of all pollutants at that site, the same “Total” definition used on the main dashboard.</p>
+<p>Each location card lists <strong>every other-health-risk pollutant</strong> measured at that site, the <strong>health effects</strong> each one is associated with, and its risk over time — the average concentration divided by the screening level. A value below <strong>1.00x</strong> is below the screening level; <strong>1.00x</strong> is the screening level itself. The bottom <strong>Total</strong> row adds those ratios across all pollutants at that site, the same “Total” definition used on the main dashboard.</p>
 <p>CHATTER analyzes air pollutants measured with automatic gas chromatograph (AutoGC) equipment. In Beaumont-Port-Arthur, there are only two AutoGC monitor sites that measure cancer risk pollutants analyzed by CHATTER: Beaumont-Downtown and Nederland 17th Street. Hatched gray cells mean no measurement exists for that pollutant in that period.</p>
 <details>
 <summary>
 <strong>How to read this plot</strong> (click to expand)
 </summary>
 <p>Each <strong>row</strong> is an air pollutant, with the health system or target organ it is associated with listed beside it. Each <strong>column</strong> is a period of time. The bottom row, <strong>Total</strong>, adds all the pollutants together for that period. The number in each square is the measured level divided by the EPA screening level, written as a multiple with an “x.”</p>
-<strong>A worked example.</strong>
-<p>On the Nederland 17th Street card, find the row for <strong>Benzene</strong> and the column for <strong>2024</strong>. The square reads <strong>0.06x</strong>. The health effect listed beside benzene is <em>Immune system</em>, meaning breathing benzene at high enough levels can affect the immune system. The number means the benzene level in 2024 was about 5% of the screening level — <strong>well below</strong> it. In the same column, the <strong>Total</strong> row reads <strong>0.17x</strong>: even adding all thirteen pollutants together, the combined level was about a sixth of the limit.</p>
-<p><strong>Everything on this tab is currently below the limit.</strong> The color scale does not begin to darken until <strong>1.00x</strong>, and the highest value here is about 0.17x, so the whole grid appears in the palest shade. That is the finding, not a rendering problem. Read the numbers to compare pollutants, sites, and years.</p>
+<strong>A clarifying example.</strong>
+<p>On the Nederland 17th Street card, find the row for <strong>Benzene</strong> and the column for <strong>2024</strong>. The square reads <strong>0.022x</strong>. The health effect listed beside benzene is <em>Immune system</em>, meaning breathing benzene at high enough levels can affect the immune system. The number means the average benzene level in 2024 was about 2% of the screening level — <strong>well below</strong> it. In the same column, the <strong>Total</strong> row reads <strong>0.119x</strong>: even adding all thirteen pollutants together, the combined level was about an eighth of the screening level.</p>
+<img src="figures/examples/bg2poll_example.png" class="img-fluid">
+<p><strong>Everything on this tab is currently below the screening level.</strong> The color scale does not begin to darken until <strong>1.00x</strong>, and the highest value here is about <strong>0.119x</strong>, so the whole grid appears in the palest shade. That is the finding, not a rendering problem. Read the numbers to compare pollutants, sites, and years.</p>
 <p><strong>Hatched gray squares</strong> mean the pollutant was not measured in that period — which is different from a low reading, and so is marked differently.</p>
 <p>For a general explanation of heat maps, see the <a href="./index_faq.html">Frequently Asked Questions</a>.</p>
 </details>

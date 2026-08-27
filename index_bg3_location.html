@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
-          <div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="undefined"></a></div></div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
@@ -183,8 +183,8 @@ ul.task-list li input[type="checkbox"] {
 .card-header { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
 .bslib-gap-spacing { gap: 0.4rem !important; }
 </style>
-<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: 220px minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: 340px minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 62fr) minmax(3em, 38fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card bslib-card html-fill-container" data-title="EPA Criteria Pollutants by Location" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header"><div class="card-title"><span style="display: inline">
@@ -200,12 +200,31 @@ EPA Criteria Pollutants by Location
 </summary>
 <p>Each <strong>row</strong> is one of the six EPA criteria pollutants. Only four EPA criteria pollutants are measured. Each <strong>column</strong> is a period of time. Unlike the other tabs, the number here is not compared to a screening level — it is the <strong>EPA design value divided by the National Ambient Air Quality Standard (NAAQS)</strong>, written as a multiple with an “x.”</p>
 <p>A design value is the particular statistic EPA uses for each pollutant when comparing a monitor against its standard, rather than a simple average. (The <a href="./index_faq.html">FAQ</a> explains which statistic is used for each pollutant.) <strong>Below 1.00x</strong> means the pollutant is within the standard; <strong>above 1.00x</strong> means it is above the standard.</p>
-<strong>A worked example.</strong>
+<strong>A clarifying example.</strong>
 <p>On the Beaumont Downtown card, find the row for <strong>O3</strong> (ozone) and the column for <strong>2023</strong>. The square reads <strong>0.97x</strong>. That means ozone’s design value for 2023 was 97% of the national standard — just under the limit. In the same column, <strong>NO2</strong> reads <strong>0.31x</strong>, comfortably under.</p>
+<img src="figures/examples/bg3_example.png" class="img-fluid">
 <p><strong>Some sites show exceedances.</strong> For example, the <strong>Port Arthur Memorial School</strong> card: <strong>PM₂.₅</strong> reaches <strong>1.98x</strong> the standard in 2023 and stays above it every year. <strong>Hamshire</strong> reaches <strong>1.53x</strong>. These are the only two sites that measure PM₂.₅, and both exceed the standard — a finding that is easy to miss, because eight of the ten cards show that row as hatched grey.</p>
 <p><strong>Hatched gray rows labeled “not monitored at this site”</strong> mean that monitor does not measure that pollutant at all. Coverage is uneven: PM2.5 for instance, is measured at only two of the ten sites.</p>
 <p><strong>One caution.</strong> These are single-year values. EPA’s official design values, the ones used to decide whether an area meets the Clean Air Actstandard, averages <strong>three consecutive years to make a decision, ensuring that a single stand out year does not unduly influence compliance determinations</strong>. So a value above 1.00x here is a signal worth a closer look, not an official finding that the area violated the standard.</p>
 </details>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><!-- The colour scale. The location cards below carry no scale panel of their
+     own — unlike the BG1/BG2 cards, which draw one beside every heatmap — so
+     without this the tab showed colours with nothing to read them against.
+     plot_bg3_legend() had been defined since the page was written but was
+     never called. --><div class="card cell bslib-card html-fill-container" data-title="Colour scale" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Colour scale
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<img src="index_bg3_location_files/figure-html/cell-6-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+</div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -224,7 +243,7 @@ Beaumont Downtown [0009]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-6-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-7-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -238,7 +257,7 @@ Hamshire [0022]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-7-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-8-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -256,7 +275,7 @@ Nederland 17th Street [1035]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-8-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-9-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -270,7 +289,7 @@ Orange 1st Street [1083]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-9-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-10-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -288,7 +307,7 @@ Port Arthur Memorial School [0021]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-10-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-11-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -302,7 +321,7 @@ Port Arthur West 7th Street Gate 2 [1071]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-11-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-12-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -320,7 +339,7 @@ Port Arthur West [0011]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-12-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-13-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -334,7 +353,7 @@ SETRPC 40 Sabine Pass [0101]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-13-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-14-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -352,7 +371,7 @@ SETRPC 43 Jefferson Co Airport [0102]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-14-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-15-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -366,7 +385,7 @@ West Orange [1001]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-15-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-16-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
