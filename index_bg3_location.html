@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CHATTER — EPA Criteria Pollutants by Location – EDF CHATTER</title>
+<title>CHATTER — EPA Criteria Pollutants by Location – Beaumont / Port Arthur CHATTER</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">EDF CHATTER</span>
+    <span class="navbar-title">Beaumont / Port Arthur CHATTER</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -102,10 +102,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Beaumont/Port Arthur</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index_bg1_location.html"> 
 <span class="menu-text">Cancer Risk by Location</span></a>
@@ -119,10 +115,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Other Health Risks by Pollutants and Location</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index_bg2_effect.html"> 
-<span class="menu-text">Other Health Risks by Health Indicator</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./index_bg3_location.html" aria-current="page"> 
 <span class="menu-text">EPA Criteria Pollutants by Location</span></a>
   </li>  
@@ -132,11 +124,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index_methods.html"> 
-<span class="menu-text">Data &amp; Methods</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./index_faq.html"> 
-<span class="menu-text">FAQ</span></a>
+<span class="menu-text">Data, Methods &amp; FAQ</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -186,50 +174,36 @@ ul.task-list li input[type="checkbox"] {
 .card-body img { display: block; height: auto !important; margin: 0 !important; }
 .card-header { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
 .bslib-gap-spacing { gap: 0.4rem !important; }
+/* Invisible card that keeps a lone heatmap at half width in the 2-per-row grid. */
+.card-spacer { visibility: hidden !important; }
 </style>
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="flow" style="display: grid; grid-template-rows: 340px minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 62fr) minmax(3em, 38fr);
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card bslib-card html-fill-container" data-title="EPA Criteria Pollutants by Location" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header"><div class="card-title"><span style="display: inline">
 EPA Criteria Pollutants by Location
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
-<p>The Clean Air Act identifies 6 air pollutants that pose the greatest health risks. They are known as criteria pollutants. This section tracks four EPA criteria pollutants, sulfur dioxide (SO₂), nitrogen dioxide (NO₂), ozone (O₃), and fine particle pollution (PM₂.₅), measured at state run (TCEQ) regulatory monitors near the Beaumont, Port Arthur community. Each location card below shows <strong>all four</strong> EPA criteria pollutants trackedso every site can be read as a complete picture of its criteria-pollutant concerns.</p>
-<p>The EPA uses air monitoring data to determine if pollution levels meet the Clean Air Act requirements. They make these decisions based on a number representing all the measurements over a year taken at an air monitor. It is called a Design Value. It represents the highest pollution levels in that area. In the figure, each cell shows the <strong>EPA Design Value</strong> for that pollutant divided by the corresponding <strong>National Ambient Air Quality Standard (NAAQS)</strong>.&nbsp;A value below 1.00 means the design value is within the standard; values above 1.00 indicate the yearly average is greater than the Clean Air Act (NAAQS) standard and poses an increased health risk.. Design values are computed using the same statistics EPA uses to determine if air pollution levels in the region are meeting the criteria set by the Clean Air Act. Columns cover single-year design values plus a year-to-date column, a rolling <strong>Last 365 Days</strong> window and the <strong>Last Available Month</strong>. EPA AQS releases data on a delay of weeks to months, so each of those three headings names, on its second line, the month the criteria data actually ends in. The color scale is shared across all locations, so cards can be compared directly.</p>
+<p>The Clean Air Act identifies 6 air pollutants that pose the greatest health risks. They are known as criteria pollutants. This section tracks four EPA criteria pollutants, sulfur dioxide (SO₂), nitrogen dioxide (NO₂), ozone (O₃), and fine particle pollution (PM₂.₅), measured at state-run (TCEQ) regulatory monitors near the Beaumont, Port Arthur community — ten EPA-registered monitoring sites in Jefferson and Orange counties. Two of them (Beaumont Downtown and Nederland 17th Street) are also AutoGC monitors. Each location card below shows <strong>all four</strong> EPA criteria pollutants tracked, so every site can be read as a complete picture of its criteria-pollutant concerns.</p>
+<p>The EPA uses air monitoring data to determine if pollution levels meet the Clean Air Act requirements. They make these decisions based on a number representing all the measurements over a year taken at an air monitor. It is called a Design Value. It represents the highest pollution levels in that area. In the figure, each cell shows the <strong>EPA Design Value</strong> for that pollutant divided by the corresponding <strong>National Ambient Air Quality Standard (NAAQS)</strong>.&nbsp;A value below 1.00 means the design value is within the standard; values above 1.00 indicate the yearly average is greater than the Clean Air Act (NAAQS) standard and poses an increased health risk. Design values are computed using the same statistics EPA uses to determine if air pollution levels in the region are meeting the criteria set by the Clean Air Act. The calendar-year columns are <strong>EPA’s own published single-year values</strong> for each site, taken from EPA’s design value reports; the year-to-date column, the rolling <strong>Last 365 Days</strong> window and the <strong>Last Available Month</strong> — periods EPA has not published yet — are calculated by CHATTER from EPA’s daily monitoring data in the same way. EPA AQS releases data on a delay of weeks to months, so each of those three headings names, on its second line, the month the criteria data actually ends in. The color scale is shared across all locations, so cards can be compared directly.</p>
 <p>Not every monitor measures every pollutant. <strong>Hatched gray cells mean no measurement exists</strong> — a pollutant that is <em>not monitored at this site</em> is shown as an empty hatched row rather than being hidden, so a gap in coverage is never mistaken for a clean reading.</p>
 <details>
 <summary>
 <strong>How to read this plot</strong> (click to expand)
 </summary>
-<p>Each <strong>row</strong> is one of the six EPA criteria pollutants. Only four EPA criteria pollutants are measured. Each <strong>column</strong> is a period of time. Unlike the other tabs, the number here is not compared to a screening level — it is the <strong>EPA design value divided by the National Ambient Air Quality Standard (NAAQS)</strong>, written as a multiple with an “x.”</p>
-<p>A design value is the particular statistic EPA uses for each pollutant when comparing a monitor against its standard, rather than a simple average. (The <a href="./index_faq.html">FAQ</a> explains which statistic is used for each pollutant.) <strong>Below 1.00x</strong> means the pollutant is within the standard; <strong>above 1.00x</strong> means it is above the standard.</p>
+<p>Each <strong>row</strong> is one of the EPA criteria pollutants measured here — nitrogen dioxide (NO₂), sulfur dioxide (SO₂), ozone (O₃) and fine particles (PM₂.₅); the Clean Air Act names six, and four are measured at these sites. Each <strong>column</strong> is a period of time. Unlike the other pages, the number here is not compared to a screening level — it is the <strong>EPA design value divided by the National Ambient Air Quality Standard (NAAQS)</strong>, written as a multiple with an “x.”</p>
+<p>A design value is the particular statistic EPA uses for each pollutant when comparing a monitor against its standard: the annual average for NO₂ and PM₂.₅, the fourth-highest daily maximum 8-hour average for O₃, and the 99th percentile of the daily 1-hour maxima for SO₂. (The <a href="./index_methods.html">FAQ</a> lists the standard used for each pollutant.) <strong>Below 1.00x</strong> means the pollutant is within the standard; <strong>above 1.00x</strong> means it is above the standard.</p>
 <strong>A clarifying example.</strong>
-<p>On the Beaumont Downtown card, find the row for <strong>O3</strong> (ozone) and the column for <strong>2023</strong>. The square reads <strong>0.97x</strong>. That means ozone’s design value for 2023 was 97% of the national standard — just under the limit. In the same column, <strong>NO2</strong> reads <strong>0.31x</strong>, comfortably under.</p>
+<p>On the Beaumont Downtown heatmap, find the row for <strong>O₃</strong> (ozone) and the column for <strong>2023</strong>. The square reads <strong>0.97x</strong>. That means ozone’s design value for 2023 was 97% of the national standard — just under the limit. In the same column, <strong>NO₂</strong> reads <strong>0.11x</strong>, comfortably under.</p>
 <img src="figures/examples/bg3_example.png" class="img-fluid">
-<p><strong>Some sites show exceedances.</strong> For example, the <strong>Port Arthur Memorial School</strong> card: <strong>PM₂.₅</strong> reaches <strong>1.98x</strong> the standard in 2023 and stays above it every year. <strong>Hamshire</strong> reaches <strong>1.53x</strong>. These are the only two sites that measure PM₂.₅, and both exceed the standard — a finding that is easy to miss, because eight of the ten cards show that row as hatched grey.</p>
-<p><strong>The last three columns name their ending month.</strong> The other tabs run to the most recent TCEQ data. EPA AQS, the source for this tab, releases data weeks to months after the fact, so the year-to-date, Last 365 Days and monthly columns here each carry, on a second line, the month the criteria data actually ends in — for example “Last 365 Days (ending Apr 2026)” is the 365 days up to the end of April. A site whose own data ends earlier than that month shows a blank cell rather than older data.</p>
-<p><strong>Hatched gray rows labeled “not monitored at this site”</strong> mean that monitor does not measure that pollutant at all. Coverage is uneven: PM2.5 for instance, is measured at only two of the ten sites.</p>
-<p><strong>One caution.</strong> These are single-year values. EPA’s official design values, the ones used to decide whether an area meets the Clean Air Actstandard, averages <strong>three consecutive years to make a decision, ensuring that a single stand out year does not unduly influence compliance determinations</strong>. So a value above 1.00x here is a signal worth a closer look, not an official finding that the area violated the standard.</p>
+<p><strong>Fine particles are compared with the annual standard.</strong> The PM₂.₅ row is the year’s average divided by EPA’s annual standard of 9.0 µg/m³, and the NO₂ row the year’s average divided by the annual standard of 53 ppb. On the <strong>Port Arthur Memorial School</strong> card, <strong>PM₂.₅</strong> reads <strong>1.12x</strong> in 2023 and <strong>1.16x</strong> in 2024 — EPA’s 2024 annual average of about 10.4 µg/m³ is 16% above the standard — and falls to <strong>0.95x</strong> in 2025. <strong>Hamshire</strong> sits at <strong>1.00x</strong> in 2023 and below the standard since. These are the only two sites with PM₂.₅ values from EPA.</p>
+<p><strong>Some sites reach the standard for other pollutants.</strong> Ozone at <strong>Nederland 17th Street</strong> reads <strong>1.04x</strong> in 2024, and sulfur dioxide at <strong>Port Arthur West</strong> reads <strong>1.01x*</strong> in 2025 (the asterisk: EPA says that year does not meet its completeness requirements).</p>
+<p><strong>The last three columns name their ending month.</strong> The other pages run to the most recent TCEQ data. EPA AQS, the source for this page, releases data weeks to months after the fact, so the year-to-date, Last 365 Days and monthly columns here each carry, on a second line, the month the criteria data actually ends in — for example “Last 365 Days (ending Apr 2026)” is the 365 days up to the end of April. A site whose own data ends earlier than that month shows a blank cell rather than older data.</p>
+<p><strong>Hatched gray rows labeled “not monitored at this site”</strong> mean that monitor does not measure that pollutant at all. Coverage is uneven: PM₂.₅, for instance, is measured at only two of the ten sites.</p>
+<p><strong>Where the numbers come from.</strong> The calendar-year columns are EPA’s own published single-year values (an asterisk marks a year EPA says does not meet its completeness requirements); the year-to-date, Last 365 Days and monthly columns, which EPA has not published yet, are calculated by CHATTER from EPA’s daily data. A note under each heatmap says which is which.</p>
+<p><strong>One caution.</strong> These are single-year values. EPA’s official design values, the ones used to decide whether an area meets the Clean Air Act standard, averages <strong>three consecutive years to make a decision, ensuring that a single stand out year does not unduly influence compliance determinations</strong>. So a value above 1.00x here is a signal worth a closer look, not an official finding that the area violated the standard.</p>
 </details>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><!-- The colour scale. The location cards below carry no scale panel of their
-     own — unlike the BG1/BG2 cards, which draw one beside every heatmap — so
-     without this the tab showed colours with nothing to read them against.
-     plot_bg3_legend() had been defined since the page was written but was
-     never called. --><div class="card cell bslib-card html-fill-container" data-title="Colour scale" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-header"><div class="card-title"><span style="display: inline">
-Colour scale
-</span></div></div>
-<div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-5-output-1.png" class="img-fluid quarto-dashboard-img-contain">
-</div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -248,7 +222,7 @@ Beaumont Downtown [0009]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-6-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-5-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -262,7 +236,7 @@ Hamshire [0022]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-7-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-6-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -280,7 +254,7 @@ Nederland 17th Street [1035]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-8-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-7-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -294,7 +268,7 @@ Orange 1st Street [1083]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-9-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-8-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -312,7 +286,7 @@ Port Arthur Memorial School [0021]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-10-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-9-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -326,7 +300,7 @@ Port Arthur West 7th Street Gate 2 [1071]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-11-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-10-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -344,7 +318,7 @@ Port Arthur West [0011]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-12-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-11-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -358,7 +332,7 @@ SETRPC 40 Sabine Pass [0101]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-13-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-12-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -376,7 +350,7 @@ SETRPC 43 Jefferson Co Airport [0102]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-14-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-13-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -390,7 +364,7 @@ West Orange [1001]
 </span></div></div>
 <div class="card-body html-fill-item html-fill-container">
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
-<img src="index_bg3_location_files/figure-html/cell-15-output-1.png" class="img-fluid quarto-dashboard-img-contain">
+<img src="index_bg3_location_files/figure-html/cell-14-output-1.png" class="img-fluid quarto-dashboard-img-contain">
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
@@ -806,6 +780,19 @@ West Orange [1001]
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 StatAnalytics IDD, LLC, with Environmental Defense Fund · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> · not for commercial use</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 <script type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (_event) {
